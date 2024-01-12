@@ -11,6 +11,11 @@
 		5CC564842B51314100F4B9F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564832B51314100F4B9F4 /* ContentView.swift */; };
 		5CC564862B51314300F4B9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC564852B51314300F4B9F4 /* Assets.xcassets */; };
 		5CC5648A2B51314300F4B9F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC564892B51314300F4B9F4 /* Preview Assets.xcassets */; };
+		5CC564992B51348200F4B9F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564982B51348200F4B9F4 /* HomeView.swift */; };
+		5CC564A02B5134FB00F4B9F4 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5649F2B5134FB00F4B9F4 /* MessagesView.swift */; };
+		5CC564A22B51350700F4B9F4 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564A12B51350700F4B9F4 /* BookmarkView.swift */; };
+		5CC564A42B51351400F4B9F4 /* AddpostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564A32B51351400F4B9F4 /* AddpostView.swift */; };
+		5CC564A62B51351D00F4B9F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564A52B51351D00F4B9F4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		5CC564852B51314300F4B9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CC564872B51314300F4B9F4 /* CafeSNS_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CafeSNS_Demo.entitlements; sourceTree = "<group>"; };
 		5CC564892B51314300F4B9F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CC564982B51348200F4B9F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5CC5649F2B5134FB00F4B9F4 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		5CC564A12B51350700F4B9F4 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		5CC564A32B51351400F4B9F4 /* AddpostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddpostView.swift; sourceTree = "<group>"; };
+		5CC564A52B51351D00F4B9F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				5CC564812B51314100F4B9F4 /* CafeSNS_DemoApp.swift */,
 				5CC564832B51314100F4B9F4 /* ContentView.swift */,
+				5CC564902B5133F300F4B9F4 /* Home */,
+				5CC564912B51341B00F4B9F4 /* Messages */,
+				5CC564932B51343100F4B9F4 /* Bookmark */,
+				5CC564922B51342900F4B9F4 /* Addpost */,
+				5CC564942B51343B00F4B9F4 /* Profile */,
 				5CC564852B51314300F4B9F4 /* Assets.xcassets */,
 				5CC564872B51314300F4B9F4 /* CafeSNS_Demo.entitlements */,
 				5CC564882B51314300F4B9F4 /* Preview Content */,
@@ -67,6 +82,86 @@
 				5CC564892B51314300F4B9F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CC564902B5133F300F4B9F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5CC564952B51346100F4B9F4 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5CC564912B51341B00F4B9F4 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5649A2B5134C000F4B9F4 /* View */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		5CC564922B51342900F4B9F4 /* Addpost */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5649C2B5134CE00F4B9F4 /* View */,
+			);
+			path = Addpost;
+			sourceTree = "<group>";
+		};
+		5CC564932B51343100F4B9F4 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5649B2B5134C900F4B9F4 /* View */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		5CC564942B51343B00F4B9F4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5649D2B5134D400F4B9F4 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5CC564952B51346100F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC564982B51348200F4B9F4 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC5649A2B5134C000F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5649F2B5134FB00F4B9F4 /* MessagesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC5649B2B5134C900F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC564A12B51350700F4B9F4 /* BookmarkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC5649C2B5134CE00F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC564A32B51351400F4B9F4 /* AddpostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC5649D2B5134D400F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC564A52B51351D00F4B9F4 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC564A42B51351400F4B9F4 /* AddpostView.swift in Sources */,
+				5CC564A02B5134FB00F4B9F4 /* MessagesView.swift in Sources */,
+				5CC564A22B51350700F4B9F4 /* BookmarkView.swift in Sources */,
+				5CC564992B51348200F4B9F4 /* HomeView.swift in Sources */,
 				5CC564842B51314100F4B9F4 /* ContentView.swift in Sources */,
+				5CC564A62B51351D00F4B9F4 /* ProfileView.swift in Sources */,
 				5CC564822B51314100F4B9F4 /* CafeSNS_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
