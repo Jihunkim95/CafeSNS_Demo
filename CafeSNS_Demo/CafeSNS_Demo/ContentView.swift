@@ -6,45 +6,35 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import GoogleSignInSwift
+import GoogleSignIn
 
-enum Tab{
-    case home
-    case messages
-    case addpost
-    case bookmark
-    case profile
-}
+
 
 struct ContentView: View {
     
-    @State private var selectedTab: Tab = .home
-    
-    var body: some View {
-        TabView(selection: $selectedTab) {
-            HomeView()
-                .badge(2)
-                .tabItem {
-                    Label("house", systemImage: "house")
-                }
-            MessagesView()
-                .tabItem {
-                    Label("message", systemImage: "message")
-                }
-            AddpostView()
-                .tabItem {
-                    Label("plus", systemImage: "plus.circle")
-                }
-            BookmarkView()
-                .badge("!")
-                .tabItem {
-                    Label("bookmark", systemImage: "bookmark")
-                }
+    @State private var userLoggedIn = (Auth.auth().currentUser != nil)
 
-            ProfileView()
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
+    var body: some View {
+        VStack{
+            if userLoggedIn {
+                MainView()
+            } else {
+                LoginPrepareView()
+            }
+        }.onAppear{
+            //로그인여부
+            Auth.auth().addStateDidChangeListener{ auth, user in
+                if (user != nil) {
+                    userLoggedIn = true
+                } else {
+                    userLoggedIn = false
                 }
+            }
         }
+ 
     }
 }
 

@@ -53,6 +53,9 @@
 		5CC564F72B52172400F4B9F4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564F62B52172400F4B9F4 /* FirebaseStorage */; };
 		5CC564F92B52172400F4B9F4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564F82B52172400F4B9F4 /* FirebaseStorageCombine-Community */; };
 		5CC564FD2B52190F00F4B9F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CC564FC2B52190F00F4B9F4 /* GoogleService-Info.plist */; };
+		5CC565042B521FE200F4B9F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565032B521FE200F4B9F4 /* MainView.swift */; };
+		5CC565062B52206B00F4B9F4 /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */; };
+		5CC565082B52246700F4B9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565072B52246700F4B9F4 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,10 @@
 		5CC564B02B5211EC00F4B9F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5CC564B22B52146A00F4B9F4 /* LoginPrepareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrepareView.swift; sourceTree = "<group>"; };
 		5CC564FC2B52190F00F4B9F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5CC564FE2B5219BE00F4B9F4 /* CafeSNS-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CafeSNS-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5CC565032B521FE200F4B9F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
+		5CC565072B52246700F4B9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +143,12 @@
 		5CC564802B51314100F4B9F4 /* CafeSNS_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5CC564FE2B5219BE00F4B9F4 /* CafeSNS-Demo-Info.plist */,
 				5CC564812B51314100F4B9F4 /* CafeSNS_DemoApp.swift */,
 				5CC564832B51314100F4B9F4 /* ContentView.swift */,
+				5CC565072B52246700F4B9F4 /* AppDelegate.swift */,
 				5CC564A72B52118100F4B9F4 /* Login */,
+				5CC564FF2B521F9600F4B9F4 /* Main */,
 				5CC564902B5133F300F4B9F4 /* Home */,
 				5CC564912B51341B00F4B9F4 /* Messages */,
 				5CC564932B51343100F4B9F4 /* Bookmark */,
@@ -261,6 +271,7 @@
 		5CC564AC2B5211AB00F4B9F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,6 +282,38 @@
 				5CC564B02B5211EC00F4B9F4 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5CC564FF2B521F9600F4B9F4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5CC565022B521FA800F4B9F4 /* ViewModel */,
+				5CC565012B521FA200F4B9F4 /* View */,
+				5CC565002B521F9D00F4B9F4 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5CC565002B521F9D00F4B9F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CC565012B521FA200F4B9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CC565032B521FE200F4B9F4 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CC565022B521FA800F4B9F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,15 +427,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC565082B52246700F4B9F4 /* AppDelegate.swift in Sources */,
 				5CC564B32B52146A00F4B9F4 /* LoginPrepareView.swift in Sources */,
 				5CC564A42B51351400F4B9F4 /* AddpostView.swift in Sources */,
 				5CC564A02B5134FB00F4B9F4 /* MessagesView.swift in Sources */,
+				5CC565042B521FE200F4B9F4 /* MainView.swift in Sources */,
 				5CC564A22B51350700F4B9F4 /* BookmarkView.swift in Sources */,
 				5CC564992B51348200F4B9F4 /* HomeView.swift in Sources */,
 				5CC564B12B5211EC00F4B9F4 /* User.swift in Sources */,
 				5CC564842B51314100F4B9F4 /* ContentView.swift in Sources */,
 				5CC564A62B51351D00F4B9F4 /* ProfileView.swift in Sources */,
 				5CC564822B51314100F4B9F4 /* CafeSNS_DemoApp.swift in Sources */,
+				5CC565062B52206B00F4B9F4 /* UserAuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +572,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CafeSNS-Demo-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -564,6 +611,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CafeSNS-Demo-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -6,11 +6,25 @@
 //
 
 import SwiftUI
+import GoogleSignInSwift
+import Firebase
+import FirebaseAuth
+
 
 struct LoginPrepareView: View {
+    @EnvironmentObject var vm: UserAuthModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        GoogleSignInButton{
+            Task {
+                signInWithGoogle
+                await vm.signIn()
+            }
+        }.frame(width: 300, height: 60, alignment: .center)
+        
+
     }
+    
 }
 
