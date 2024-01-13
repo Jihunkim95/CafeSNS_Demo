@@ -17,7 +17,7 @@
 		5CC564A42B51351400F4B9F4 /* AddpostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564A32B51351400F4B9F4 /* AddpostView.swift */; };
 		5CC564A62B51351D00F4B9F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564A52B51351D00F4B9F4 /* ProfileView.swift */; };
 		5CC564B12B5211EC00F4B9F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564B02B5211EC00F4B9F4 /* User.swift */; };
-		5CC564B32B52146A00F4B9F4 /* LoginPrepareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564B22B52146A00F4B9F4 /* LoginPrepareView.swift */; };
+		5CC564B32B52146A00F4B9F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC564B22B52146A00F4B9F4 /* LoginView.swift */; };
 		5CC564B62B52158600F4B9F4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564B52B52158600F4B9F4 /* FirebaseAnalytics */; };
 		5CC564B82B52158600F4B9F4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564B72B52158600F4B9F4 /* FirebaseAnalyticsOnDeviceConversion */; };
 		5CC564BA2B52158600F4B9F4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564B92B52158600F4B9F4 /* FirebaseAnalyticsSwift */; };
@@ -54,8 +54,8 @@
 		5CC564F92B52172400F4B9F4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC564F82B52172400F4B9F4 /* FirebaseStorageCombine-Community */; };
 		5CC564FD2B52190F00F4B9F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CC564FC2B52190F00F4B9F4 /* GoogleService-Info.plist */; };
 		5CC565042B521FE200F4B9F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565032B521FE200F4B9F4 /* MainView.swift */; };
-		5CC565062B52206B00F4B9F4 /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */; };
 		5CC565082B52246700F4B9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565072B52246700F4B9F4 /* AppDelegate.swift */; };
+		5CC565182B524A2C00F4B9F4 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC565172B524A2C00F4B9F4 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,12 +71,12 @@
 		5CC564A32B51351400F4B9F4 /* AddpostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddpostView.swift; sourceTree = "<group>"; };
 		5CC564A52B51351D00F4B9F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5CC564B02B5211EC00F4B9F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		5CC564B22B52146A00F4B9F4 /* LoginPrepareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPrepareView.swift; sourceTree = "<group>"; };
+		5CC564B22B52146A00F4B9F4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5CC564FC2B52190F00F4B9F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5CC564FE2B5219BE00F4B9F4 /* CafeSNS-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CafeSNS-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5CC565032B521FE200F4B9F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
 		5CC565072B52246700F4B9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CC565172B524A2C00F4B9F4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,7 +263,7 @@
 		5CC564A82B52119200F4B9F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5CC564B22B52146A00F4B9F4 /* LoginPrepareView.swift */,
+				5CC564B22B52146A00F4B9F4 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 		5CC564AC2B5211AB00F4B9F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5CC565052B52206B00F4B9F4 /* UserAuthModel.swift */,
+				5CC565172B524A2C00F4B9F4 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -428,7 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC565082B52246700F4B9F4 /* AppDelegate.swift in Sources */,
-				5CC564B32B52146A00F4B9F4 /* LoginPrepareView.swift in Sources */,
+				5CC565182B524A2C00F4B9F4 /* AuthViewModel.swift in Sources */,
+				5CC564B32B52146A00F4B9F4 /* LoginView.swift in Sources */,
 				5CC564A42B51351400F4B9F4 /* AddpostView.swift in Sources */,
 				5CC564A02B5134FB00F4B9F4 /* MessagesView.swift in Sources */,
 				5CC565042B521FE200F4B9F4 /* MainView.swift in Sources */,
@@ -438,7 +439,6 @@
 				5CC564842B51314100F4B9F4 /* ContentView.swift in Sources */,
 				5CC564A62B51351D00F4B9F4 /* ProfileView.swift in Sources */,
 				5CC564822B51314100F4B9F4 /* CafeSNS_DemoApp.swift in Sources */,
-				5CC565062B52206B00F4B9F4 /* UserAuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CafeSNS_Demo/CafeSNS_Demo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CafeSNS_Demo/Preview Content\"";
@@ -604,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CafeSNS_Demo/CafeSNS_Demo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CafeSNS_Demo/Preview Content\"";

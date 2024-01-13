@@ -14,12 +14,13 @@ import GoogleSignIn
 struct CafeSNS_DemoApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var userAuth: UserAuthModel =  UserAuthModel()
 
     var body: some Scene {
         WindowGroup {
-            LoginPrepareView()
+            LoginView(authVM: AuthViewModel())
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                }
         }
-        .environmentObject(userAuth)
     }
 }

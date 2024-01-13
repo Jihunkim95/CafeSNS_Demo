@@ -17,7 +17,8 @@ enum Tab{
 
 struct MainView: View {
     @State private var selectedTab: Tab = .home
-
+    @Binding var userData: User
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeView()
@@ -38,14 +39,12 @@ struct MainView: View {
                 .tabItem {
                     Label("bookmark", systemImage: "bookmark")
                 }
-
-            ProfileView()
+            
+            ProfileView(userData: $userData)
                 .tabItem {
                     Label("Account", systemImage: "person.crop.circle.fill")
                 }
-        }    }
+        }
+    }
 }
 
-#Preview {
-    MainView()
-}

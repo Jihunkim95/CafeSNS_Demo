@@ -11,33 +11,37 @@ import FirebaseAuth
 import GoogleSignInSwift
 import GoogleSignIn
 
-
-
-struct ContentView: View {
-    
-    @State private var userLoggedIn = (Auth.auth().currentUser != nil)
-
-    var body: some View {
-        VStack{
-            if userLoggedIn {
-                MainView()
-            } else {
-                LoginPrepareView()
-            }
-        }.onAppear{
-            //로그인여부
-            Auth.auth().addStateDidChangeListener{ auth, user in
-                if (user != nil) {
-                    userLoggedIn = true
-                } else {
-                    userLoggedIn = false
-                }
-            }
-        }
- 
-    }
-}
-
-#Preview {
-    ContentView()
-}
+//
+//struct ContentView: View {
+//
+//    // 유저 데이터
+//    @StateObject var authVM: AuthViewModel
+//    
+//    var body: some View {
+//        NavigationStack {
+//            ZStack {
+//                GoogleSignInButton(
+//                    scheme: .light,
+//                    style: .wide,
+//                    action: {
+//                        authVM.googleLogin()
+//                    })
+//                .frame(width: 300, height: 60, alignment: .center)
+//            }
+//            .navigationDestination(isPresented: $authVM.isLogined, destination: {
+//                ProfileView(userData: $authVM.userData)
+//            })
+//        }
+//        .onAppear(perform: {
+//            // 로그인 상태 체크
+//            authVM.checkState()
+//        })
+//        .alert(LocalizedStringKey("로그인 실패"), isPresented: $authVM.isAlert) {
+//            Text("확인")
+//        } message: {
+//            Text("다시 시도해주세요")
+//        }
+//    }
+//}
+//
+//

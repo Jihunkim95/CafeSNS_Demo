@@ -1,19 +1,19 @@
 //
-//  ProfileView.swift
-//  CafeSNS_Demo
+//  MyPageView.swift
+//  SocialLoginUI
 //
-//  Created by 김지훈 on 2024/01/12.
+//  Created by 소하 on 2023/01/25.
 //
 
 import SwiftUI
 import GoogleSignIn
 
-struct ProfileView: View {
+struct MyPageView: View {
     // 화면 종료
     @Environment(\.dismiss) private var dismiss
     
     // 유저 데이터 바인딩
-    @Binding var userData:User
+    @Binding var userData:UserData
     
     var body: some View {
         VStack (spacing: 30) {
@@ -51,5 +51,4 @@ struct ProfileView: View {
         // 메인으로 돌아가기
         dismiss()
     }
-
 }
