@@ -13,7 +13,7 @@ struct ProfileView: View {
     @Environment(\.dismiss) private var dismiss
     
     // 유저 데이터 바인딩
-    @Binding var userData:User
+    @Binding var userData: User
     
     var body: some View {
         VStack (spacing: 30) {
@@ -26,6 +26,9 @@ struct ProfileView: View {
             Text(userData.name)
             // 이메일
             Text(userData.email)
+            Text(userData.nickName)
+//            Text(userData.socialID ?? "")
+
             
             Spacer()
             
