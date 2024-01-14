@@ -8,22 +8,21 @@
 import Foundation
 
 struct User {
-//    let id: Int //DB에서 채번되야함
+    let uid: String //DB에서 채번되야함
     let url:URL?
     let name:String
     let email:String
     var passwordHash: String? // 자체 로그인의 경우 사용되는 비밀번호 해시
     var socialProvider: SocialProvider? // 소셜 로그인 제공자
-    var nickName: String
     
 
-    init(url: URL?, name: String, email: String, passwordHash: String? = nil, socialProvider: SocialProvider? = nil, nickName: String) {
+    init(uid: String, url: URL?, name: String, email: String, passwordHash: String? = nil, socialProvider: SocialProvider? = nil) {
+        self.uid = uid
         self.url = url
         self.name = name
         self.email = email
         self.passwordHash = passwordHash
         self.socialProvider = socialProvider
-        self.nickName = nickName
     }
 
 }

@@ -26,9 +26,7 @@ struct ProfileView: View {
             Text(userData.name)
             // 이메일
             Text(userData.email)
-            Text(userData.nickName)
-//            Text(userData.socialID ?? "")
-
+            Text(userData.uid)
             
             Spacer()
             

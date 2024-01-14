@@ -40,6 +40,7 @@ struct LoginView: View {
         } message: {
             Text("다시 시도해주세요")
         }
+        
     }
 }
 
